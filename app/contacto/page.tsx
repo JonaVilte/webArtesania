@@ -7,35 +7,48 @@ export default function ContactoPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4">
         <header className="py-8 text-center">
-          <h1 className="text-6xl font-bold text-[#b9b28a] artesania-title">Artesanía</h1>
-          <Navigation className="mt-6" />
+          {/* Eliminado el título "Artesanía" */}
+          <Navigation className="mb-8" currentPage="contacto" />
         </header>
 
-        <section className="mt-12 max-w-3xl mx-auto">
+        <section className="mt-8 max-w-3xl mx-auto">
           <h2 className="text-3xl font-semibold mb-8 text-center">Contacto</h2>
 
           <div className="bg-[#ebe5c2] p-8 rounded-lg shadow-md">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Información de contacto</h3>
-                <div className="flex items-center mb-4">
+                <a
+                  href="https://www.instagram.com/labuenaArtesanas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mb-4 hover:text-[#0b8600] transition-colors"
+                >
                   <div className="w-12 h-12 bg-[#b9b28a] rounded-full flex items-center justify-center mr-3">
                     <Instagram className="w-6 h-6 text-[#f8f3d9]" />
                   </div>
                   <span>labuenaArtesanas</span>
-                </div>
-                <div className="flex items-center mb-4">
+                </a>
+                <a
+                  href="https://wa.me/5491199999999"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center mb-4 hover:text-[#0b8600] transition-colors"
+                >
                   <div className="w-12 h-12 bg-[#b9b28a] rounded-full flex items-center justify-center mr-3">
                     <MessageSquare className="w-6 h-6 text-[#f8f3d9]" />
                   </div>
                   <span>11 9999-9999</span>
-                </div>
-                <div className="flex items-center mb-4">
+                </a>
+                <a
+                  href="mailto:artesa@gmail.com"
+                  className="flex items-center mb-4 hover:text-[#0b8600] transition-colors"
+                >
                   <div className="w-12 h-12 bg-[#b9b28a] rounded-full flex items-center justify-center mr-3">
                     <Mail className="w-6 h-6 text-[#f8f3d9]" />
                   </div>
                   <span>artesa@gmail.com</span>
-                </div>
+                </a>
                 <p className="mt-4">Estamos disponibles de lunes a viernes de 9:00 a 18:00 hs.</p>
               </div>
               <div>

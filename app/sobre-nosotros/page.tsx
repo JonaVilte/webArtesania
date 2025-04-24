@@ -7,60 +7,46 @@ export default function SobreNosotrosPage() {
     <main className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4">
         <header className="py-8 text-center">
-          <h1 className="text-6xl font-bold text-[#b9b28a] artesania-title">Artesanía</h1>
-          <Navigation className="mt-6" />
+          <Navigation className="mb-8" currentPage="sobre-nosotros" />
         </header>
 
-        <section className="mt-12">
+        <section className="mt-8">
           <h2 className="text-3xl font-semibold mb-8 text-center">Nuestra Historia</h2>
 
           <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <div className="relative w-full aspect-square">
+            <div className="md:w-1/2 w-full">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/Artesanos en Tela y Tradición.png"
                   alt="Artesanos trabajando"
-                  fill
+                  width={500}
+                  height={400}
                   className="object-cover rounded-lg"
                 />
-              </div>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 w-full">
               <p className="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat odio vel felis porttitor, ut
-                vulputate ante sed. Fuero vitae in maximus venenatis vel consequatur adipiscing.
+                Nuestra historia comenzó hace más de tres décadas, cuando María, nuestra fundadora, decidió rescatar las
+                técnicas artesanales que había aprendido de su abuela. Con un pequeño taller en su hogar y mucha pasión,
+                empezó a crear piezas únicas que rápidamente captaron la atención de quienes valoraban el trabajo hecho
+                a mano.
               </p>
               <p className="mb-4">
-                Sed consequat odio vel felis porttitor, ut vulputate ante sed. Fuero vitae in maximus venenatis vel
-                consequatur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Con el paso de los años, lo que comenzó como un proyecto personal se transformó en un emprendimiento
+                familiar. Los hijos de María aprendieron las técnicas tradicionales y aportaron una visión
+                contemporánea, fusionando lo ancestral con tendencias modernas, sin perder la esencia del trabajo
+                artesanal.
               </p>
               <p className="mb-4">
-                Ut bibendum dolor sit amet, consectetur adipiscing elit. Sed consequat odio vel felis porttitor, ut
-                vulputate ante sed. Fuero vitae in maximus venenatis vel consequatur adipiscing.
+                Hoy, nuestro taller se ha convertido en un espacio de creación donde cada pieza cuenta una historia.
+                Trabajamos con materiales naturales y sostenibles, respetando el medio ambiente y manteniendo vivas las
+                tradiciones que nos definen. Cada artesanía que sale de nuestras manos lleva consigo no solo belleza
+                estética, sino también el legado cultural que nos enorgullece compartir con el mundo.
               </p>
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <h3 className="text-2xl font-semibold mb-6">Nuestros Valores</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-[#ebe5c2] p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-2">Tradición</h4>
-                <p>
-                  Preservamos técnicas artesanales transmitidas por generaciones, honrando nuestras raíces culturales.
-                </p>
-              </div>
-              <div className="bg-[#ebe5c2] p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-2">Sostenibilidad</h4>
-                <p>
-                  Utilizamos materiales naturales y procesos respetuosos con el medio ambiente en todas nuestras
-                  creaciones.
-                </p>
-              </div>
-              <div className="bg-[#ebe5c2] p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-2">Autenticidad</h4>
-                <p>Cada pieza es única, hecha a mano con dedicación y amor, reflejando nuestra pasión por el arte.</p>
-              </div>
+              <p className="mb-4">
+                Nos motiva saber que nuestras creaciones forman parte de los hogares de quienes, como nosotros, valoran
+                lo auténtico y lo hecho con amor. Seguimos creciendo y evolucionando, pero siempre fieles a nuestra
+                esencia: crear con las manos, el corazón y el alma.
+              </p>
             </div>
           </div>
 
