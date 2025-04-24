@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 49 47% 92%;
+    --foreground: 43 16% 26%;
+
+    --card: 49 47% 92%;
+    --card-foreground: 43 16% 26%;
+
+    --popover: 49 47% 92%;
+    --popover-foreground: 43 16% 26%;
+
+    --primary: 43 16% 26%;
+    --primary-foreground: 49 47% 92%;
+
+    --secondary: 45 23% 63%;
+    --secondary-foreground: 43 16% 26%;
+
+    --muted: 45 23% 63%;
+    --muted-foreground: 43 16% 26%;
+
+    --accent: 134 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 45 23% 63%;
+    --input: 43 16% 26%;
+    --ring: 43 16% 26%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-pacifico), cursive;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  li,
+  span {
+    font-family: var(--font-pacifico), cursive;
+  }
+}
+
+.artesania-title {
+  font-family: var(--font-pacifico), cursive;
+  font-style: normal;
+  font-weight: 400;
+}
